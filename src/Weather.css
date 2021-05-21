@@ -1,0 +1,54 @@
+.Weather {
+  font-family: arial, sans-serif;
+  border: 1pt solid gainsboro;
+  color: black;
+  width: 600px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.App-header {
+  background-color: white;
+}
+.Weather h1 {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: left;
+  color: #202124;
+  margin: 0px;
+}
+.Weather ul li {
+  color: #70757a;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  list-style-type: none;
+  margin: 0px;
+}
+.Weather ul {
+  padding-left: 0px;
+}
+.Weather .row .col-6 {
+  text-align: left;
+}
+.Weather .row .col-6 .unit {
+  display: inline-block;
+  line-height: 24px;
+  padding-left: 6px;
+  vertical-align: top;
+  font-size: 16px;
+  margin-top: 6px;
+}
+.Weather .row .col-6 .degree {
+  display: inline-block;
+  line-height: 60px;
+  vertical-align: top;
+  font-size: 48px;
+}
+.Weather .row .col-6 ul {
+  color: #70757a;
+
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 9px;
+  padding-top: 6px;
+}
