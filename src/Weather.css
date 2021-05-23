@@ -52,3 +52,14 @@
   padding-left: 9px;
   padding-top: 6px;
 }
+.celcius {
+  display: inline-block;
+  margin-left: 10px;
+}
+.Fanrehite {
+  display: inline-block;
+  margin-left: 10px;
+}
+.Weather .row .col-6 {
+  display: flex;
+}
