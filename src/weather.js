@@ -5,6 +5,7 @@ import axios from "axios";
 import FormatedDate from "./formattedDate.js"
 import WeatherIcon from "./weathericon.js"
 import WeatherTemperature from "./weathertemperature.js"
+import WeatherForecast from "./weatherforecast.js"
 
 export default function  Weather(props){
 
@@ -20,7 +21,8 @@ export default function  Weather(props){
             description:response.data.weather[0].description,
             icon:response.data.weather[0].icon,
             wind:response.data.wind.speed,
-            city:response.data.name
+            city:response.data.name,
+            coordinates: response.data.coord,
         });
     }
 
@@ -64,7 +66,7 @@ export default function  Weather(props){
             </ul>
             <div className="row">
                 <div className="col-6">
-                    <WeatherIcon code={weatherDate.icon}/>
+                    <WeatherIcon code={weatherDate.icon} size={52}/>
                     <WeatherTemperature celcius={weatherDate.temperature}/>
                    
                 </div>
@@ -75,6 +77,7 @@ export default function  Weather(props){
                     </ul>
                 </div>
             </div>
+            <WeatherForecast coordinates={weatherDate.coordinates}/>
         </div>
     )
 
